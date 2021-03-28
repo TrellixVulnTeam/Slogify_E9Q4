@@ -1,0 +1,25 @@
+Name: Microsoft
+Slogan: Be What's Next
+
+Name: McDonalds
+Slogan: Lovin' Beats Hatin. 
+
+Name: MaxRoboticas
+Slogan: Invented to make your life easier 
+
+Name: Grammarly
+Slogan: Writing better, together
+
+Name: Capital One 
+Slogan: What's in your wallet?
+
+Name: Red Robins
+Slogan: YUM!!!
+
+Name: Popeyes
+Slogan: Love That Chicken
+
+Name: Arby's 
+Slogan: We Got The Meats
+
+Name: AlgoExpert
