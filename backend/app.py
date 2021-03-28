@@ -10,6 +10,8 @@ ai.api_key = the_api_key
 with open("prompt.txt") as pro:
 	prompten = pro.read()
 
+print(prompten)    
+
 # The Model
 returns = ai.Completion.create(
   engine="davinci", # OpenAI has made four text completion engines available, named davinci, ada, babbage and curie. We are using davinci, which is the most capable of the four.
@@ -22,8 +24,6 @@ returns = ai.Completion.create(
 	presence_penalty=0.9 # a number between 0 and 1. The higher this value the model will make a bigger effort in talking about new topics.
 	#stream=False,
 )
-
-print("I like Arielle")
 
 text = returns['choices'][0]['text']
 
