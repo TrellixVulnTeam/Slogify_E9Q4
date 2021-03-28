@@ -2,6 +2,7 @@
   background-image: linear-gradient(40deg, #53354A, #903749);
   min-height: 100vh;
   display: flex;
+  
 }
 
 .App-link {
@@ -9,12 +10,14 @@
 }
 
 h1{
-	font-size: 70px;
+	font-size: 100px;
   color: beige;
   text-align: center;
   margin-top: 10px;
   padding-top: 20px;
+  
 }
+
 
 h2 {
   font-size: 16px;
