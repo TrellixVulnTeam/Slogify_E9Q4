@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const[values, setValues] = useState({
+    Company: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [valid, setValid] = useState(false);
+
+  const handleCompanyInputChange = (event) => {
+    setValues({...values, Company: event.target.value})
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (values.Company) {
+      setValid(true);
+    }
+    setSubmitted(true);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Slogify</h1>
+    <div className="form-container">
+      <form className="register-form" onSubmit={handleSubmit}>
+        {submitted && valid ? <div className="success-message">Success!</div>: null}
+        <input
+          onChange={handleCompanyInputChange}
+          value={values.Company}
+          className="form-field"
+          placeholder="Company Name"
+          name="Company"/>
+          {submitted && !values.Company ? <span>Please enter a company name</span>: null}
+          <button class="form-field" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+    <h2>Advertising Made Easy</h2>
     </div>
   );
 }
