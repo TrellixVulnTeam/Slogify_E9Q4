@@ -22,4 +22,3 @@ Slogan: Love That Chicken
 Name: Arby's 
 Slogan: We Got The Meats
 
-Name: AlgoExpert
